@@ -4,6 +4,7 @@ import (
 	_ "myGram/docs"
 	"myGram/infra/config"
 	"myGram/infra/database"
+	"os"
 
 	"myGram/repository/comment_repository/comment_pg"
 	"myGram/repository/photo_repository/photo_pg"
@@ -28,6 +29,14 @@ import (
 
 // @host localhost:8080
 // @BasePath /
+
+func getPort() string {
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	return port
+}
 
 func StartApp() {
 
@@ -99,5 +108,5 @@ func StartApp() {
 		socialMedias.DELETE("/:socialMediaId", authService.Authentication(), authService.AuthorizationSocialMedia(), socialMediaHandler.DeleteSocialMedia)
 	}
 
-	// app.Run(":" + config.AppConfig().Port)
+	app.Run(":" + getPort())
 }
