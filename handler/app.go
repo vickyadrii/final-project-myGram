@@ -99,5 +99,5 @@ func StartApp() {
 		socialMedias.DELETE("/:socialMediaId", authService.Authentication(), authService.AuthorizationSocialMedia(), socialMediaHandler.DeleteSocialMedia)
 	}
 
-	app.Run(":" + config.AppConfig().Port)
+	// app.Run(":" + config.AppConfig().Port)
 }
