@@ -4,7 +4,6 @@ import (
 	_ "myGram/docs"
 	"myGram/infra/config"
 	"myGram/infra/database"
-	"os"
 
 	"myGram/repository/comment_repository/comment_pg"
 	"myGram/repository/photo_repository/photo_pg"
@@ -31,7 +30,7 @@ import (
 // @BasePath /
 
 func getPort() string {
-	port := os.Getenv("PORT")
+	port := config.AppConfig().Port
 	if port == "" {
 		port = "8080"
 	}
