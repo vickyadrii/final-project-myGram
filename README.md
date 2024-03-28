@@ -1,7 +1,4 @@
-# Final Project 2 - MyGram App
-
-Final Projek Kelas Kominfo. Membuat aplikasi MyGram <br>
-BASE_URL = `https://final-project-mygram-production-2090.up.railway.app`
+# Assignment 3 - Go | Kominfo x Hacktiv8
 
 # Swagger UI
 
@@ -16,3 +13,5 @@ BASE_URL = `https://final-project-mygram-production-2090.up.railway.app`
 ## Users
 
 ![](assets/users.png)
+
+### BASE_URL = `https://final-project-mygram-production-2090.up.railway.app`
