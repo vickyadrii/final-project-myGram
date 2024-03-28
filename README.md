@@ -1,4 +1,4 @@
-# Assignment 3 - Go | Kominfo x Hacktiv8
+# Final Project - MyGram | Kominfo x Hacktiv8
 
 # Swagger UI
 
